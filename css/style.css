@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Epilogue-Medium";
+  src: url("/fonts/Epilogue-Medium.ttf");
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("/fonts/Epilogue-Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: hsl(0deg, 0%, 98%);
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+.button {
+  stroke: #686868;
+  stroke-width: 1.5;
+  fill: none;
+  transition: 0.2s ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
+  stroke: hsl(0deg, 0%, 8%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.header__image {
+  height: 31px;
+  width: 90px;
+  padding-top: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 583px;
+  align-items: center;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.navbar__item {
+  position: relative;
+  width: 65px;
+  list-style: none;
+  text-decoration: none;
+  font: 0.9rem "Epilogue-Bold", sans-serif;
+  color: hsl(0deg, 0%, 41%);
+}
+.navbar__item--register {
+  margin-left: 30px;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  border: 2px solid hsl(0deg, 0%, 41%);
+}
+.navbar__item--arrows {
+  width: 90px;
+}
+.navbar__item--arrow1 {
+  position: absolute;
+  top: 4px;
+  left: 74px;
+}
+.navbar__item--arrow2 {
+  position: absolute;
+  top: 4px;
+  left: 77px;
+}
+
+section {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 622px;
+  width: 80%;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+.header__image {
+  height: 30px;
+  width: 95px;
+}
+
+.left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "Epilogue-Medium", sans-serif;
+}
+.left-part__title {
+  font-size: 4.7rem;
+  height: 138px;
+}
+.left-part__description {
+  font-size: 1rem;
+  color: hsl(0deg, 0%, 41%);
+  line-height: 150%;
+  margin: 55px 0;
+}
+.left-part__btn {
+  width: 156px;
+  height: 50px;
+  font: 1.1rem "Epilogue-Medium", sans-serif;
+  background: hsl(0deg, 0%, 8%);
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 117px;
+}
+.left-part__clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 470px;
+  height: 21px;
+}
+.left-part__clients--audiophile {
+  height: 33px;
+  width: 63px;
+}
+
+.right-part {
+  background: url("/images/image-hero-desktop.png") center/contain no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */

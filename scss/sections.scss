@@ -1,0 +1,63 @@
+section {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 622px;
+  width: 80%;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+.header__image {
+  height: 30px;
+  width: 95px;
+}
+
+.left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: $font-1;
+
+
+  &__title {
+    font-size: 4.7rem;
+    height: 138px;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: $color-2;
+    line-height: 150%;
+    margin: 55px 0;
+  }
+
+  &__btn {
+    width: 156px;
+    height: 50px;
+    font: 1.1rem $font-1;
+    background: $color-3;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 117px;
+  }
+
+  &__clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 470px;
+    height: 21px;
+
+    &--audiophile {
+      height: 33px;
+      width: 63px;
+    }
+  }
+
+}
+
+.right-part {
+  background: url("/images/image-hero-desktop.png") center/contain no-repeat;
+}

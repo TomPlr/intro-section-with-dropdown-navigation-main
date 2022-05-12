@@ -1,0 +1,58 @@
+//-------------------------------------FONTS---------------------------------------------------------
+@font-face {
+  font-family: "Epilogue-Medium";
+  src: url("/fonts/Epilogue-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("/fonts/Epilogue-Bold.ttf");
+}
+
+$font-1: "Epilogue-Medium", sans-serif;
+$font-2: "Epilogue-Bold", sans-serif;
+
+
+//-------------------------------------COLORS---------------------------------------------------------
+
+
+$color-1: hsl(0, 0%, 98%);
+$color-2: hsl(0, 0%, 41%);
+$color-3: hsl(0, 0%, 8%);
+
+
+//-------------------------------------RESET---------------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: $color-1;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+.button {
+  stroke: #686868;
+  stroke-width: 1.5;
+  fill: none;
+  transition: 0.2s ease-in-out;
+
+
+  &:hover {
+    cursor: pointer;
+    background: $color-1;
+    color: $color-3;
+    stroke: $color-3;
+  }
+}
+
+//-------------------------------------MIXINS---------------------------------------------------------
+
+
+//-------------------------------------PLACEHOLDERS---------------------------------------------------------
+
