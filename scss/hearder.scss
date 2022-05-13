@@ -6,9 +6,9 @@
 }
 
 .header__image {
-  height: 31px;
+  height: 35px;
   width: 90px;
-  padding-top: 5px;
+  margin-top: 5px;
 }
 
 .navbar {
@@ -50,14 +50,66 @@
   &--arrow1 {
     position: absolute;
     top: 4px;
-    left: 74px
+    left: 74px;
+    transition: 0.2s ease-in-out;
   }
 
   &--arrow2 {
     position: absolute;
     top: 4px;
-    left: 77px
+    left: 77px;
+    transition: 0.2s ease-in-out;
   }
 
 
 }
+
+.dropdown {
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.15);
+  cursor: default;
+
+
+  &__items {
+    color: #686868;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+
+    &:hover {
+      color: $color-4;
+    }
+  }
+
+  &--features {
+    display: none;
+    top: 28px;
+    left: -84px;
+    height: 190px;
+    width: 160px;
+    padding: 20px 18px;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+  }
+
+  &--company {
+    display: none;
+    top: 28px;
+    left: -4px;
+    height: 153px;
+    width: 113px;
+    align-items: center;
+    padding: 20px 18px;
+  }
+
+}
+
+.show {
+  opacity: 1;
+  display: grid;
+  animation-duration: 0.5s;
+  animation-name: appearance;
+
+}
+

@@ -14,17 +14,32 @@
     <nav class="navbar">
         <img class="header__image" src="./images/logo.svg" alt="snap-logo">
         <ul class="navbar__list">
-            <li class="navbar__item navbar__item--arrows button">
-                <span>Features</span>
-                <svg class="navbar__item--arrow1" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m1 1 4 4 4-4"/>
+            <li class="navbar__item navbar__item--arrows button st close">
+                <span class="close">Features</span>
+                <svg class="navbar__item--arrow1 close" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                    <path class="navbar__item--arrow1 close" id="firstArrow" d="m1 1 4 4 4-4"/>
                 </svg>
+                <div class="dropdown dropdown--features">
+                    <img src="images/icon-todo.svg" alt="">
+                    <a class="dropdown__items" href="#">Todo List</a>
+                    <img src="images/icon-calendar.svg" alt="">
+                    <a class="dropdown__items" href="#">Calendar</a>
+                    <img src="images/icon-reminders.svg" alt="">
+                    <a class="dropdown__items" href="#">Reminders</a>
+                    <img src="images/icon-planning.svg" alt="">
+                    <a class="dropdown__items" href="#">Planning</a>
+                </div>
             </li>
-            <li class="navbar__item navbar__item--arrows button">
-                <span>Company</span>
-                <svg class="navbar__item--arrow2" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m1 1 4 4 4-4"/>
+            <li class="navbar__item navbar__item--arrows button nd close">
+                <span class="close">Company</span>
+                <svg class="navbar__item--arrow2 close" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                    <path class="navbar__item--arrow2 close" id="secondArrow" d="m1 1 4 4 4-4"/>
                 </svg>
+                <div class="dropdown dropdown--company">
+                    <a class="dropdown__items" href="#">History</a>
+                    <a class="dropdown__items" href="#">Our Team</a>
+                    <a class="dropdown__items" href="#">Blog</a>
+                </div>
             </li>
             <li class="navbar__item">Careers</li>
             <li class="navbar__item button">About</li>
