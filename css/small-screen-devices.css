@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "Epilogue-Medium";
+    src: url("/fonts/Epilogue-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Epilogue-Bold";
+    src: url("/fonts/Epilogue-Bold.ttf");
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: hsl(0deg, 0%, 98%);
+}
+
+br {
+    display: none;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    display: block;
+    width: 100vw;
+}
+
+.active {
+    z-index: 2;
+    background: grey;
+}
+
+.header {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    height: 65px;
+    width: 95%;
+    align-items: center;
+}
+
+.burger-menu {
+    z-index: 5;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: url("/images/icon-menu.svg") center/contain no-repeat;
+    transition: 0.2s ease-in-out;
+}
+
+
+.navbar {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 255px;
+    height: 100vh;
+    transition: 0.5s ease-in-out;
+
+}
+
+.sidebar {
+    position: fixed;
+    right: -13px;
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, .50);
+
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 80px 10px 20px 20px;
+
+}
+
+.navbar__item {
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-family: "Epilogue-Medium", sans-serif;
+}
+
+.navbar__log {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar__item--register {
+    margin: 10px 0;
+    width: 200px;
+
+}
+
+.navbar__item--arrow1 {
+    position: absolute;
+    top: 15px;
+    left: 96px;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar__item--arrow2 {
+    position: absolute;
+    top: 15px;
+    left: 99px;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown {
+    position: relative;
+    top: auto;
+    left: auto;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: none;
+    cursor: default;
+}
+
+.dropdown--company {
+    height: 153px;
+    width: 130px;
+    align-items: center;
+    padding: 20px 18px;
+}
+
+
+section {
+    position: absolute;
+    grid-template-columns: 1fr;
+    grid-template-rows:50% 50%;
+    grid-template-areas:
+    'image'
+    'text';
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left-part {
+    justify-content: space-between;
+    grid-area: text;
+    padding: 40px 10px 0 10px;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+    min-height: 500px;
+}
+
+.left-part__title {
+    font-size: 2.5rem;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.left-part__description {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 20px 0;
+    width: 80%;
+}
+
+.left-part__btn {
+    height: 55px;
+    width: 155px;
+    margin-bottom: 20px;
+}
+
+.left-part__clients {
+    width: 100%;
+    max-width: 690px;
+    height: 110px;
+}
+
+
+.right-part {
+    background: url('/images/image-hero-mobile.png') center/cover;
+    grid-area: image;
+
+}
