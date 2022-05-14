@@ -54,8 +54,8 @@ body {
 
 
 .navbar {
+    display: none;
     z-index: 2;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
@@ -63,15 +63,16 @@ body {
     right: -300px;
     width: 255px;
     height: 100vh;
-    transition: 0.5s ease-in-out;
+
+
 
 }
 
 .sidebar {
+    display: flex;
     position: fixed;
     right: -13px;
     box-shadow: 0 0 0 10000px rgba(0, 0, 0, .50);
-
 }
 
 .navbar__list {
