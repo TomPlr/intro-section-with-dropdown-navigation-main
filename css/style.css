@@ -45,6 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
+  margin: 0 20px;
 }
 
 .header__image {
@@ -56,7 +57,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 583px;
+  width: 1215px;
   align-items: center;
 }
 
@@ -174,7 +175,7 @@ section {
 .left-part__btn {
   width: 156px;
   height: 50px;
-  font: 1.1rem "Epilogue-Medium", sans-serif;
+  font: 1.1rem "Epilogue-Bold", sans-serif;
   background: hsl(0deg, 0%, 8%);
   border-radius: 12px;
   color: white;

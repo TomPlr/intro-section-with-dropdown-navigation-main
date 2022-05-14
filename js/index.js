@@ -8,7 +8,6 @@ const secondArrow = document.getElementById("secondArrow")
 
 const elems = () => {
     const el = document.querySelectorAll(".show");
-    console.log(el);
     [].forEach.call(el, function (el) {
         el.classList.remove("show");
     })
@@ -35,6 +34,7 @@ window.addEventListener('click', (e) => {
         elems()
     }
 })
+
 
 
 
